@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun Jan 03 22:34:24 2021">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="ab1bc1936e7e4e299243bc4b7e87ab15" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="29" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="8" type="JavaHandler"/>
+<property name="SimulationClose" value="43" type="JavaHandler"/>
+<property name="SimulationRun" value="50" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="9" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="ALU.v, 110, 86" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 111, 83" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 115, 85" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 116, 85" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 118, 84" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 139, 176" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 139, 275" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 198, 275" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 209, 280" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 218, 278" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 226, 141" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 276, 277" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 283, 236" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 293, 187" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 297, 167" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 302, 203" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 306, 174" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 328, 279" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 331, 241" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 340, 240" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 346, 187" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 349, 234" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 349, 274" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 360, 167" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 372, 184" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 377, 268" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 394, 95" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 414, 252" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 467, 262" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 504, 274" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 507, 279" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 104, 123" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 153, 184" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 157, 275" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 183, 257" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 70, 182" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 93, 122" value="1" type="GuiResourceData"/>
+<property name="EX_MA.v, 95, 126" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 100, 202" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 100, 26" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 120, 380" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 142, 368" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 145, 414" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 157, 328" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 157, 347" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 159, 311" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 188, 327" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 229, 224" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 230, 241" value="1" type="GuiResourceData"/>
+<property name="FI_ID.v, 303, 29" value="1" type="GuiResourceData"/>
+<property name="FI_ID_D.v, 168, 372" value="1" type="GuiResourceData"/>
+<property name="FI_ID_D.v, 66, 300" value="1" type="GuiResourceData"/>
+<property name="ID_EX_D.v, 167, 368" value="1" type="GuiResourceData"/>
+<property name="ID_EX_D.v, 67, 315" value="1" type="GuiResourceData"/>
+<property name="ID_EX_D.v, 70, 311, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ID_EX_D.v, 71, 314" value="1" type="GuiResourceData"/>
+<property name="MA_WB_D.v, 172, 373" value="1" type="GuiResourceData"/>
+<property name="MA_WB_D.v, 201, 349" value="1" type="GuiResourceData"/>
+<property name="MA_WB_D.v, 202, 327" value="1" type="GuiResourceData"/>
+<property name="MA_WB_D.v, 206, 369" value="1" type="GuiResourceData"/>
+<property name="MA_WB_D.v, 69, 314" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 106, 144" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 112, 194" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 113, 353" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 117, 181" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 119, 291" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 119, 316" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 120, 231" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 120, 241" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 120, 314" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 124, 258" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 126, 274" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 126, 343" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 127, 217" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 130, 115" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 131, 205" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 131, 261" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 134, 223" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 136, 260" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 137, 292" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 140, 336" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 144, 134" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 146, 129" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 148, 350" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 149, 164" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 149, 346" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 151, 205" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 151, 253" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 153, 72" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 154, 276" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 154, 337" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 154, 372" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 155, 295" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 157, 304" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 158, 144" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 159, 238" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 159, 277" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 159, 311" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 160, 306" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 161, 274" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 161, 280" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 161, 281" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 161, 284" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 161, 290" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 161, 295" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 162, 196" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 162, 256" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 163, 329" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 163, 350" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 164, 296" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 164, 368" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 165, 199" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 166, 352" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 167, 261" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 167, 276" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 168, 257" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 168, 369" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 169, 316" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 169, 349" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 169, 96" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 170, 283" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 171, 329" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 171, 333" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 172, 241" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 172, 299" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 172, 381" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 173, 239" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 173, 317" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 173, 336" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 173, 353" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 175, 242" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 176, 269" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 177, 258" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 177, 79" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 178, 258" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 179, 313" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 179, 320" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 180, 218" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 180, 269" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 180, 298" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 181, 207" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 182, 234" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 182, 255" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 182, 295" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 183, 282" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 184, 100" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 184, 256" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 184, 301" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 185, 240" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 185, 265" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 186, 222" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 187, 108" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 187, 185" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 188, 265" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 188, 332" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 190, 312" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 192, 219" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 193, 292" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 193, 79" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 195, 38" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 198, 103" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 200, 240" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 201, 305" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 202, 252" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 204, 260" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 204, 262" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 205, 215" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 205, 69" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 206, 292" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 206, 55" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 207, 123" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 207, 203" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 207, 307" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 208, 232" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 208, 238" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 211, 291" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 212, 101" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 212, 338" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 213, 347" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 213, 352" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 216, 313" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 217, 219" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 217, 252" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 221, 342" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 222, 145" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 223, 159" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 223, 212" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 224, 236" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 227, 143" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 227, 197" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 234, 300" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 234, 335" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 236, 223" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 236, 311" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 237, 270" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 238, 143" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 239, 332" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 240, 219" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 241, 138" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 243, 206" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 245, 197" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 247, 137" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 249, 210" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 249, 245" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 250, 222" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 252, 205" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 259, 125" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 261, 214" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 263, 121" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 265, 155" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 277, 276" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 281, 116" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 281, 97" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 286, 129" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 289, 147" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 292, 276" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 294, 140" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 295, 125" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 304, 82" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 305, 371" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 311, 263" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 312, 293" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 350, 197" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 4, 215" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 440, 197" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 441, 91" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 442, 164" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 442, 86" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 443, 160" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 473, 165" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 486, 162" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 488, 81" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 49, 163" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 50, 87" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 548, 82" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 549, 143" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 65, 183" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 66, 143" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 68, 197" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 69, 165" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 69, 217" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 69, 274" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 69, 293" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 71, 276, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 73, 333" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 84, 219" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 88, 335" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 96, 164" value="1" type="GuiResourceData"/>
+<property name="MCU.v, 96, 201" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="9" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, main (main.v" value="20" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="9" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="5" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PC.v, 156, 218" value="1" type="GuiResourceData"/>
+<property name="PC.v, 159, 305" value="1" type="GuiResourceData"/>
+<property name="PC.v, 162, 199" value="1" type="GuiResourceData"/>
+<property name="PC.v, 167, 253" value="1" type="GuiResourceData"/>
+<property name="PC.v, 170, 224" value="1" type="GuiResourceData"/>
+<property name="PC.v, 179, 333" value="1" type="GuiResourceData"/>
+<property name="PC.v, 180, 184" value="1" type="GuiResourceData"/>
+<property name="PC.v, 183, 340" value="1" type="GuiResourceData"/>
+<property name="PC.v, 249, 351" value="1" type="GuiResourceData"/>
+<property name="PC.v, 46, 366" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, Opcode" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, Opcode, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, PC, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1030, 546" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1075, 501" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1618, -180" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 21, 181" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 255, 215" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 27, 150" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 274, 259" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 300, 479" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 302, 95" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 310, 164" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 312, 157" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 313, 129" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 325, 273" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 368, 529" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 46, -31" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 492, 526" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 510, 601" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 52, -30" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 55, -55" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 554, 311" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 57, -60" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 576, 630" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 578, 532" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 58, -12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 58, -34" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 586, 527" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 59, -17" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 593, 261" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 611, 630" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 619, 309" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 634, 519" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 64, -54" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 79, -51" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 885, 542" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 889, 379" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 933, 246" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 10" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 2" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 5" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 6" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 8" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, ALUBin[31:0]], 10" value="6" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, ID_EX_Rt[31:0]], 22" value="4" type="GuiResourceData"/>
+<property name="RegFile.v, 113, 196" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 113, 201" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 136, 203" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 162, 198" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 167, 201" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 303, 201" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 401, 224" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 406, 168" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 90, 197" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 91, 197" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 91, 218" value="1" type="GuiResourceData"/>
+<property name="RegFile.v, 94, 221" value="1" type="GuiResourceData"/>
+<property name="main.v, 100, 329" value="1" type="GuiResourceData"/>
+<property name="main.v, 107, 333" value="1" type="GuiResourceData"/>
+<property name="main.v, 141, 218" value="1" type="GuiResourceData"/>
+<property name="main.v, 190, 334" value="1" type="GuiResourceData"/>
+<property name="main.v, 201, 273" value="1" type="GuiResourceData"/>
+<property name="main.v, 211, 353" value="1" type="GuiResourceData"/>
+<property name="main.v, 211, 364" value="1" type="GuiResourceData"/>
+<property name="main.v, 212, 42" value="1" type="GuiResourceData"/>
+<property name="main.v, 216, 218" value="1" type="GuiResourceData"/>
+<property name="main.v, 216, 320" value="1" type="GuiResourceData"/>
+<property name="main.v, 242, 161" value="1" type="GuiResourceData"/>
+<property name="main.v, 274, 333" value="1" type="GuiResourceData"/>
+<property name="main.v, 280, 200" value="1" type="GuiResourceData"/>
+<property name="main.v, 280, 310" value="1" type="GuiResourceData"/>
+<property name="main.v, 324, 225" value="1" type="GuiResourceData"/>
+<property name="main.v, 326, 327" value="1" type="GuiResourceData"/>
+<property name="main.v, 33, 218" value="1" type="GuiResourceData"/>
+<property name="main.v, 34, 251" value="1" type="GuiResourceData"/>
+<property name="main.v, 34, 273" value="1" type="GuiResourceData"/>
+<property name="main.v, 35, 236" value="1" type="GuiResourceData"/>
+<property name="main.v, 409, 34" value="1" type="GuiResourceData"/>
+<property name="main.v, 413, 51" value="1" type="GuiResourceData"/>
+<property name="main.v, 452, 222" value="1" type="GuiResourceData"/>
+<property name="main.v, 517, 216" value="1" type="GuiResourceData"/>
+<property name="main.v, 550, 222" value="1" type="GuiResourceData"/>
+<property name="main.v, 564, 218" value="1" type="GuiResourceData"/>
+<property name="main.v, 58, 237" value="1" type="GuiResourceData"/>
+<property name="main.v, 92, 239" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="30" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="28" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
