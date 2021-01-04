@@ -28,47 +28,9 @@ wire[31:0]PCout;
 
 //IM
 wire[31:0]Inst;
-
-//RegFile
-wire [4:0] W_reg;
-wire [31:0] R_data1;
-wire [31:0] R_data2;
-wire[31:0] W_data;
-
-//MCU
-wire RegDst;
-wire Jump;
-wire RegWr;
-wire Branch;
-wire MemtoReg;
-wire MemWr;
-wire MemRd;
-wire ALUSrc;
-wire CPUInt; 
-wire PCWrite;
 wire Pause;
 wire ControlPause;
-wire[1:0] ALUOp;
-wire[2:0] PauseCount;
-wire[31:0] IntCause;
 
-//PC J BEQ
-wire[31:0] PCin;
-wire Andout;
-wire[31:0] JumpOrBEQ;
-wire PCSrc;
-
-
-
-
-
-
-
-//DM
-wire[31:0] R_data;
-
-//Cause
-wire[31:0] Cause;
 //FI_ID
 wire[31:0] FI_ID_IR;
 wire[31:0] FI_ID_NPC1;
@@ -122,6 +84,39 @@ wire [31:0] J_Addr;
 wire[31:0] BEQ_Addr_Part;
 //Add2
 wire[31:0] BEQ_Addr;
+//RegFile
+wire [4:0] W_reg;
+wire [31:0] R_data1;
+wire [31:0] R_data2;
+wire[31:0] W_data;
+
+//MCU
+wire RegDst;
+wire Jump;
+wire RegWr;
+wire Branch;
+wire MemtoReg;
+wire MemWr;
+wire MemRd;
+wire ALUSrc;
+wire CPUInt; 
+wire PCWrite;
+
+wire[1:0] ALUOp;
+wire[2:0] PauseCount;
+wire[31:0] IntCause;
+
+//PC J BEQ
+wire[31:0] PCin;
+wire Andout;
+wire[31:0] JumpOrBEQ;
+wire PCSrc;
+
+//DM
+wire[31:0] R_data;
+
+//Cause
+wire[31:0] Cause;
 //元件
 //第一段
 PC myPC(.clk(clk),.PCWrite(PCWrite),.PCSrc(PCSrc),.W_data(PCin),.R_data(PCout));

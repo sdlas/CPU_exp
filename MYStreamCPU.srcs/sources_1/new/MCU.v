@@ -456,43 +456,150 @@ module MCU(clk,Opcode_FI,Opcode_ID,Opcode_EX,Opcode_MA,Overflow,RegDst,Jump,RegW
                             end
                     endcase
                 end
+            6'b000100:
+                begin
+                    FIRs = Opcode_FI[25:21];
+                    FIRt = Opcode_FI[20:16];
+                    case(Opcode_ID[31:26])
+                        6'b000000://BEQ与I型
+                            begin
+                                tempRs = Opcode_ID[25:21];
+                                tempRt = Opcode_ID[20:16];
+                                tempRd = Opcode_ID[15:11];
+                                if(tempRd == FIRs||tempRd == FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                        6'b100011://BEQ型与I型
+                            begin
+                                tempRs = Opcode_ID[25:21];
+                                tempRt = Opcode_ID[20:16];
+                                if(tempRt==FIRs||tempRt==FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                        6'b101011:
+                            begin
+                                tempRs = Opcode_ID[25:21];
+                                tempRt = Opcode_ID[20:16];
+                                if(tempRt==FIRs||tempRt==FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                    endcase
+                    case(Opcode_EX[31:26])
+                        6'b000000://R与I型
+                            begin
+                                tempRs = Opcode_EX[25:21];
+                                tempRt = Opcode_EX[20:16];
+                                tempRd = Opcode_EX[15:11];
+                                if(tempRd == FIRs||tempRd == FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                        6'b100011://I型与I型
+                            begin
+                                tempRs = Opcode_EX[25:21];
+                                tempRt = Opcode_EX[20:16];
+                                if(tempRt==FIRs||tempRt == FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                        6'b101011:
+                            begin
+                                tempRs = Opcode_EX[25:21];
+                                tempRt = Opcode_EX[20:16];
+                                if(tempRt==FIRs || tempRt==FIRs)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                    endcase
+                    case(Opcode_MA[31:26])
+                        6'b000000://R与I型
+                            begin
+                                tempRs = Opcode_MA[25:21];
+                                tempRt = Opcode_MA[20:16];
+                                tempRd = Opcode_MA[15:11];
+                                if(tempRd == FIRs||tempRd == FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                        6'b100011://I型与I型
+                            begin
+                                tempRs = Opcode_MA[25:21];
+                                tempRt = Opcode_MA[20:16];
+                                if(tempRt==FIRs || tempRt == FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                        6'b101011:
+                            begin
+                                tempRs = Opcode_MA[25:21];
+                                tempRt = Opcode_MA[20:16];
+                                if(tempRt==FIRs || tempRt==FIRt)
+                                    begin
+                                        pause=1;
+                                        r_PCWrite=0;
+                                    end  
+                            end
+                    endcase
+                end
         endcase
         //控制冒险判断
-        case(Opcode_FI[31:26])
-            6'b000100:
-                begin
-                    r_ControlPause=1;
-                    r_PCWrite=0;
-                end
-            6'b000010:
-                begin
-                    r_ControlPause=1;
-                    r_PCWrite=0;
-                end
-        endcase
-        case(Opcode_ID[31:26])
-            6'b000100:
-                begin
-                    r_ControlPause=1;
-                    r_PCWrite=0;
-                end
-            6'b000010:
-                begin
-                    r_ControlPause=1;
-                    r_PCWrite=0;
-                end 
-        endcase
-        case(Opcode_EX[31:26])
-            6'b000100:
-                begin
-                    r_ControlPause=1;
-                    r_PCWrite=0;
-                end
-            6'b000010:
-                begin
-                    r_ControlPause=1;
-                    r_PCWrite=0;
-                end
-        endcase
+        if(!pause)
+            begin
+                case(Opcode_FI[31:26])
+                    6'b000100:
+                        begin
+                            r_ControlPause=1;
+                            r_PCWrite=0;
+                        end
+                    6'b000010:
+                        begin
+                            r_ControlPause=1;
+                            r_PCWrite=0;
+                        end
+                endcase
+                case(Opcode_ID[31:26])
+                    6'b000100:
+                        begin
+                            r_ControlPause=1;
+                            r_PCWrite=0;
+                        end
+                    6'b000010:
+                        begin
+                            r_ControlPause=1;
+                            r_PCWrite=0;
+                        end 
+                endcase
+                case(Opcode_EX[31:26])
+                    6'b000100:
+                        begin
+                            r_ControlPause=1;
+                            r_PCWrite=0;
+                        end
+                    6'b000010:
+                        begin
+                            r_ControlPause=1;
+                            r_PCWrite=0;
+                        end
+                endcase
+            end
     end
 endmodule
